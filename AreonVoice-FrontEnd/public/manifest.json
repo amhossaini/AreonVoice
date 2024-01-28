@@ -1,0 +1,31 @@
+{
+  "short_name": "Areon Voice",
+  "name": "Areon Voice Application",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "any",
+  "start_url": ".",
+  "id": "/?source=pwa",
+  "description":"Web Application For Sending Voice to Areon Blockchaine",
+  "display": "standalone",
+  "theme_color": "purple",
+  "background_color": "purple"
+}
