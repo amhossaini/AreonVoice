@@ -32,6 +32,7 @@ export default function HandelWallet(props) {
     const callLogin = useRef(false);
     const [txHash, setTxHash] = useState("");
     const sendTxIdAPI = useSelector(selectAPI).sendTxId;
+    const testneAreonChainId = 462;
 
 
     const signWallet = async (message) => {
@@ -102,27 +103,35 @@ export default function HandelWallet(props) {
     }, [])
     const handelConnect = (item) => {
         if (item === "metamask") {
-            var StoregOfWalletConnect = localStorage.getItem('walletconnect');
-            if (StoregOfWalletConnect) {
-                connector.killSession();
+            const currentNet = window.ethereum.networkVersion;
+            console.log(currentNet)
+            if(currentNet != chains[testneAreonChainId].chainId) {
+                alert("Your Wallet NetWork is not match. Please set Metamask network to: Areon Network Testnet");
             }
-            const promise = new Promise((resolve, reject) => {
-                var metamaskAccounts = window.ethereum.request({ method: 'eth_requestAccounts' });
-                setStatusConnection({ status: "loading", message: "Confirm Metamask connection" });
-                resolve(metamaskAccounts);
-                reject((err) => err);
-            });
-            promise.then(
-                (response) => {
-                    setActiveWallet({ provider: "metamask", wallet: "Metamask Extention" });
-                    setAccount(response[0].toLowerCase());
-                    localStorage.setItem("address", response[0].toLowerCase())
-                    setChainId(window.ethereum.networkVersion);
-                    setWalletIcon("/icon/metamask.webp");
-                    setStatusConnection({ status: "idle", message: "Metamask connected" })
-                },
-                (error) => { setStatusConnection({ status: "rejected", message: error.message }) }
-            );
+            else {
+                var StoregOfWalletConnect = localStorage.getItem('walletconnect');
+                if (StoregOfWalletConnect) {
+                    connector.killSession();
+                }
+                const promise = new Promise((resolve, reject) => {
+                    var metamaskAccounts = window.ethereum.request({ method: 'eth_requestAccounts' });
+                    setStatusConnection({ status: "loading", message: "Confirm Metamask connection" });
+                    resolve(metamaskAccounts);
+                    reject((err) => err);
+                });
+                promise.then(
+                    (response) => {
+                        setActiveWallet({ provider: "metamask", wallet: "Metamask Extention" });
+                        setAccount(response[0].toLowerCase());
+                        localStorage.setItem("address", response[0].toLowerCase())
+                        setChainId(window.ethereum.networkVersion);
+                        setWalletIcon("/icon/metamask.webp");
+                        setStatusConnection({ status: "idle", message: "Metamask connected" })
+                    },
+                    (error) => { setStatusConnection({ status: "rejected", message: error.message }) }
+                );
+            }
+            
         }
         if (item === "walletConnect") {
             if (!connector.connected) {
@@ -358,10 +367,10 @@ export default function HandelWallet(props) {
                                         <span>Metamask Extention<small>{hasmetamask ? " (Recomended)" : <a href="https://metamask.io/download/" className="ms-1" target="_blank" rel="noopener noreferrer">Install Extention</a>}</small></span>
                                         <img src="/icon/metamask.webp" alt="metamask" />
                                     </button>
-                                    <button className="selectWallet" onClick={() => handelConnect("walletConnect")} disabled={false}>
+                                    {/* <button className="selectWallet" onClick={() => handelConnect("walletConnect")} disabled={false}>
                                         <span>Wallet Connect</span>
                                         <img src="/icon/walletconnect.png" alt="metamask" />
-                                    </button>
+                                    </button> */}
                                     <p className="mt-4 mb-3">Select Wallet and confirm it in your wallet App</p>
                                 </div>
                             }
