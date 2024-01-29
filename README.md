@@ -15,6 +15,7 @@ Overall, the app offers a efficient way for users to record, compress and share 
 **AreonVoice** don't charge you at all. all cost are network fee.
 
 ## Process
+- Connect your Metamask Wallet (Note : Set your Metamask Network to Areon Network Testnet)
 - Record your voice and tap send
 - Enter address of who you want to received your voice.
 - Enter transaction amount, it can be 0, in this case you only pay for network fee.
