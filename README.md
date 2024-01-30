@@ -46,6 +46,17 @@ Overall, the app offers a efficient way for users to record, compress and share 
 6- Now you can switch to Areon Network Testnet.
 
 
+## Further Improvement
+We have some great ideas for next steps like:
+
+-  Offer Voice wave NFT
+-  Optimizing compressing process for file with music
+-  Encrypting data for private message
+-  WALL: a place for public messages
+-  Offering options for play area like different theme based on context or voice to text
+-  Send user message with appealing voice
+
+
 ## Getting Started with AreonVoice BackEnd
 
 
