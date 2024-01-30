@@ -306,22 +306,22 @@ export default function VoiceRecorder(props) {
       <div className="Recfooter">
         <div className="RecAction">
           <button className={recordStatus === "" ? "RecordBtn" : "d-none"} onClick={() => { StartOPUS(); setRecordStatus("recording") }}>
-            <img className="mic" src={window.location.origin + "/Icon/mic.png"} alt="mic" />
+            <img className="mic" src={window.location.origin + "/icon/mic.png"} alt="mic" />
           </button>
           <button id="stopButton" className={recordStatus === "recording" ? "RecordBtn" : "d-none"} onClick={() => { setCounter(0); setRecordStatus("readyForPlay") }} >
-            <img className="stop" src={window.location.origin + "/Icon/stop.png"} alt="stop" />
+            <img className="stop" src={window.location.origin + "/icon/stop.png"} alt="stop" />
           </button>
           <button
             className={recordStatus === "readyForPlay" ? "RecordBtn" : "d-none"}
             onClick={() => document.getElementById('recordedAudio').play()}
           >
-            <img className="play" src={window.location.origin + "/Icon/play.png"} alt="play" />
+            <img className="play" src={window.location.origin + "/icon/play.png"} alt="play" />
           </button>
           <button
             className={recordStatus === "playing" ? "RecordBtn" : "d-none"}
             onClick={() => document.getElementById('recordedAudio').pause()}
           >
-            <img className="pauss" src={window.location.origin + "/Icon/pauss.png"} alt="pauss" />
+            <img className="pauss" src={window.location.origin + "/icon/pauss.png"} alt="pauss" />
           </button>
         </div>
         {
