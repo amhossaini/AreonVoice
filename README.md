@@ -62,10 +62,10 @@ We have some great ideas for next steps like:
 
 In the project directory, you can run:
 
-``sh
+``
 cd bin
 ``
-``sh
+``
 node www
 ``
 
@@ -81,11 +81,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-``sh
+``
 npm start
 ``
 
-``sh
+``
 npm run build
 ``
 
