@@ -22,16 +22,51 @@ Overall, the app offers a efficient way for users to record, compress and share 
 - Tap the send button, to send it over blockchain
 - All chat can be seen in inbox
 
+## Adding Areon Network Testnet to MetaMask manually
+1- Open MetaMask in your browser and click on the Ethereum network.
+
+2- Click Add Network.
+
+3- Click Add a network manually.
+
+4- Fill out the network details form. To add a custom network you need the following details:
+
+    Network Name: Areon Network Testnet
+    
+    New RPC URL: https://testnet-rpc.areon.network
+    
+    Chain ID: 462
+    
+    Currency Symbol: TAREA
+    
+    Block Explorer URL: https://areonscan.com
+    
+5- Once you fill out all the details, click Save.
+
+6- Now you can switch to Areon Network Testnet.
+
+
+## Further Improvement
+We have some great ideas for next steps like:
+
+-  Offer Voice wave NFT
+-  Optimizing compressing process for file with music
+-  Encrypting data for private message
+-  WALL: a place for public messages
+-  Offering options for play area like different theme based on context or voice to text
+-  Send user message with appealing voice
+
 
 ## Getting Started with AreonVoice BackEnd
 
 
 In the project directory, you can run:
 
-``sh
+``
 cd bin
 ``
-``sh
+
+``
 node www
 ``
 
@@ -47,11 +82,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-``sh
+``
 npm start
 ``
 
-``sh
+``
 npm run build
 ``
 
