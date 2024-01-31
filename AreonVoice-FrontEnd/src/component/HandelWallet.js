@@ -32,7 +32,8 @@ export default function HandelWallet(props) {
     const callLogin = useRef(false);
     const [txHash, setTxHash] = useState("");
     const sendTxIdAPI = useSelector(selectAPI).sendTxId;
-    const testneAreonChainId = 462;
+    const testnetAreonChainId = 462;
+    const mainnetAreonChainId = 463;
 
 
     const signWallet = async (message) => {
@@ -104,9 +105,8 @@ export default function HandelWallet(props) {
     const handelConnect = (item) => {
         if (item === "metamask") {
             const currentNet = window.ethereum.networkVersion;
-            console.log(currentNet)
-            if(currentNet != chains[testneAreonChainId].chainId) {
-                alert("Your Wallet NetWork is not match. Please set Metamask network to: Areon Network Testnet");
+            if(currentNet != chains[testnetAreonChainId].chainId && currentNet != chains[mainnetAreonChainId].chainId) {
+                alert("Your Wallet NetWork is not match. Please set Metamask network to: Areon Network Testnet/Mainnet");
             }
             else {
                 var StoregOfWalletConnect = localStorage.getItem('walletconnect');
