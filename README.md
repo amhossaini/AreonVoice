@@ -1,3 +1,4 @@
+![plot](./areonvoice.png)
 
 # AreonVoice
 
