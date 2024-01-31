@@ -32,6 +32,7 @@ Overall, the app offers a efficient way for users to record, compress and share 
 4- Fill out the network details form. To add a custom network you need the following details:
 
 **Testnet**    
+
     Network Name: Areon Network Testnet
     
     New RPC URL: https://testnet-rpc.areon.network
@@ -43,6 +44,7 @@ Overall, the app offers a efficient way for users to record, compress and share 
     Block Explorer URL: https://areonscan.com
 
 **Mainnet**    
+
     Network Name: Areon Network Mainnet
     
     New RPC URL: https://mainnet-rpc.areon.network
