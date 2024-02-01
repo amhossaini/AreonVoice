@@ -1,6 +1,9 @@
-![plot](./areonvoice.png)
-
-# AreonVoice
+<div align="center">
+    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice.png" width=500>
+    <h1>AreonVoice</h1>
+    <strong>Record what matter for ever</strong>
+    <br>
+</div>
 
 ## Problem
 
@@ -14,7 +17,7 @@ A word to our loves
 
 A word to whom we care about
 
-## Record what matter for ever
+## Solution
 **AreonVoice** is a messaging app built on Areon blockchain using Node.js and React.
 
 **AreonVoice** help you to easily at reasonable cost send an audio message to someone and keep it for ever on blockchain.
