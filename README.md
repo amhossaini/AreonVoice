@@ -39,6 +39,8 @@ Overall, the app offers a efficient way for users to record, compress and share 
 - Tap the send button, to send it over blockchain
 - All chat can be seen in inbox
 
+<img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice2.jpg" width=500>
+
 ## Adding Areon Network Testnet to MetaMask manually
 1- Open MetaMask in your browser and click on the Ethereum network.
 
