@@ -1,6 +1,7 @@
 <div align="center">
     <h1>AreonVoice</h1>
     <strong>Record what matter for ever</strong>
+    <br>
     <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice.png" width=100>
 </div>
 ## AreonVoice
