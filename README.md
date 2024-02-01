@@ -40,7 +40,7 @@ Overall, the app offers a efficient way for users to record, compress and share 
 - All chat can be seen in inbox
 
 <div align="center">
-    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice2.jpg" width=500>
+    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice2.jpg" width=900>
 </div>
 
 ## Adding Areon Network Testnet to MetaMask manually
