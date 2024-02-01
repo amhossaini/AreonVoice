@@ -4,11 +4,6 @@
     <strong>Record what matter for ever</strong>
     <br>
 </div>
-## AreonVoice
-Record what matter for ever
-
-![plot](./areonvoice.png)
-
 
 ## Problem
 
