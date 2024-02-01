@@ -1,8 +1,8 @@
 <div align="center">
+    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice.png" width=300>
     <h1>AreonVoice</h1>
     <strong>Record what matter for ever</strong>
     <br>
-    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice.png" width=300>
 </div>
 ## AreonVoice
 Record what matter for ever
