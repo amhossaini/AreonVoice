@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice.png" width=300>
+    <img src="https://github.com/amhossaini/AreonVoice/blob/main/areonvoice.png" width=500>
     <h1>AreonVoice</h1>
     <strong>Record what matter for ever</strong>
     <br>
